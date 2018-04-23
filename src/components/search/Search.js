@@ -10,7 +10,7 @@ class Search extends Component {
     searchText: '',
     amount: 15,
     apiUrl: 'https://pixabay.com/api',
-    apiKey: '8772631-a1c2560e757721b5371941206',
+    apiKey: 'addyourkeyhere',
     images: []
   }
 
@@ -24,7 +24,7 @@ class Search extends Component {
           &image_type=photo&per_page=${this.state.amount}&safesearch=true`)
           .then(res => this.setState({images: res.data.hits}))
           .catch(err => console.log(err));
-      }      
+      }
     });
   }
 
